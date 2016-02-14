@@ -1,14 +1,3 @@
-## Tarea Inicial
+### Repositorio para la realización del tutorial de las tareas iniciales de la asignatura de Procesadores de Lenguajes (Curso 2015/16)
 
-Configuración de las herramientas y tecnologías a utilizar en la asignatura Sistemas y Tecnologías Webs.
-
-* NodeJS
-* Express
-* Atom
-* GitHub
-* Cloud9
-* Markdown
-
-[Página personal de prácticas](http://alu0100536652.github.io/)
-
-[Página de la práctica inicial](http://alu0100536652.github.io/Tutorial-STW/)
+#### Sergio Rodríguez Martín
