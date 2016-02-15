@@ -1,4 +1,4 @@
-Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown en Mac OS
+Tutorial NodeJS, Express, Atom, Git, GitHub Desktop, Cloud9 y Pandoc en Mac OS
 ===================
 
 ## Tutorial de instalación de Node.js (con Homebrew)
