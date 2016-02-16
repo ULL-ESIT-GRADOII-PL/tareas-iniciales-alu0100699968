@@ -2,47 +2,51 @@ code {
   white-space: pre;
 }
 body {
-  background: #348F50;
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526, #414345);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #232526, #414345);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background: #348F50;
   background: -webkit-linear-gradient(to left, #348F50, #56B4D3);
-  background: linear-gradient(to left, #348F50, #56B4D3);
-  font-family: sans-serif;
+  background: linear-gradient(to left, #348F50, #56B4D3);*/
+  font-family: Verdana, sans-serif;
   padding-right: 5%;
   padding-left: 5%;
+  overflow-x:hidden;
 }
-
 h1 {
   width: 80%;
-  margin:auto;
+  margin: auto;
   text-align: center;
   color: white;
+  padding-bottom: 5%;
 }
-h2,h3 {
+h2, h3 {
   width: 100%;
   color: white;
 }
-
-p {
+body > p {
+  text-indent: 40px;
   text-align: justify;
   color: white;
 }
-
 .figure {
   width: 100%;
   text-align: center;
 }
-
 .figure > p {
   text-align: center;
+  color: white;
 }
-
 .figure > img {
   /*display:inline-block;
   vertical-align: middle;*/
 }
-
 pre {
-  width:80%;
-  margin:auto;
+  width: 80%;
+  margin: auto;
   text-align: center;
-  color:white;
+  color: rgb(38, 224, 0);
 }
