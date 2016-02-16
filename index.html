@@ -1,66 +1,81 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
+  <title>Tutorial NodeJS, Express, Atom, Git, GitHub Desktop, Cloud9 y Pandoc en Mac OS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1 id="tutorial-nodejs-express-atom-github-cloud9-y-markdown-en-mac-os">Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown en Mac OS</h1>
-<h2 id="tutorial-de-instalación-de-node.js-con-homebrew">Tutorial de instalación de Node.js (con Homebrew)</h2>
-<h3 id="descarga-e-instalación">1. Descarga e instalación</h3>
-<p>Dando por hecho que se tiene instalado el gestor de paquetes Homebrew, instalaremos Node.js con el siguiente comando:</p>
-<pre><code>brew install node</code></pre>
-<h3 id="uso-de-node.js">2. Uso de Node.js</h3>
-<p>Podemos lanzar una sesión de Javascript con el comando <em>node</em> en la consola:</p>
-<pre><code>node</code></pre>
-<div class="figure">
-<img src="./img/nodec.png" alt="Node.js" />
-<p class="caption">Node.js</p>
-</div>
-<h2 id="instalación-de-express">Instalación de Express</h2>
-<p>Para instalar express, utilizamos el comando <code>npm</code>, que tenemos disponible tras la instalación de <strong>Node.js</strong>:</p>
-<pre><code>npm install express --save</code></pre>
-<h2 id="instalación-del-editor-de-texto-atom">Instalación del editor de texto Atom</h2>
-<p>Instalar Atom en Mac OS es tan sencillo como descargar un archivo comprimido con el programa desde la página web oficial de Atom (https://atom.io) y copiar la aplicación contenida en el archivo comprimido a la carpeta Aplicaciones del sistema.</p>
-<div class="figure">
-<img src="./img/atom-download.png" alt="Atom" />
-<p class="caption">Atom</p>
-</div>
-<h2 id="instalación-de-git-con-homebrew">Instalación de Git (con Homebrew)</h2>
-<p>Para instalar git y utilizarlo desde la línea de comandos, utilizamos el siguiente comando:</p>
-<pre><code>brew install git</code></pre>
-<h2 id="instalación-de-github-desktop">Instalación de GitHub Desktop</h2>
-<p>La aplicación de escritorio de GitHub nos permite gestionar nuestros repositorios git desde una interfaz amigable y aporta sincronización con nuestra cuenta de GitHub.</p>
-<div class="figure">
-<img src="./img/gd.png" alt="Github Desktop" />
-<p class="caption">Github Desktop</p>
-</div>
-<p>Podemos descargarlo desde la web de Github Desktop (https://desktop.github.com). Una vez descargado y descomprimido, podemos moverlo a la carpeta de Aplicaciones del sistema.</p>
-<div class="figure">
-<img src="./img/gd-download.png" alt="Github Desktop download" />
-<p class="caption">Github Desktop download</p>
-</div>
-<h2 id="cloud-9">Cloud 9</h2>
-<p>Cloud9 nos permite el desarrollo online, pudiendo vincular nuestros repositorios de Github para trabajar con ellos en un IDE en la &quot;nube&quot;.</p>
-<div class="figure">
-<img src="./img/c9.png" alt="Cloud 9" />
-<p class="caption">Cloud 9</p>
-</div>
-<p>Como ya se dispone de cuenta de Cloud9, se omite el paso del tutorial.</p>
-<h2 id="pandoc">Pandoc</h2>
-<p>Para instalar Pandoc con Homebrew, utlizamos el siguiente comando:</p>
-<pre><code>brew install Pandoc</code></pre>
-<p><strong>Recursos:</strong></p>
-<ul>
-<li><a href="http://brew.sh">Homebrew</a></li>
-<li><a href="https://nodejs.org">NodeJS</a></li>
-<li><a href="http://expressjs.com">Express</a></li>
-<li><a href="https://atom.io">Atom</a></li>
-<li><a href="https://desktop.github.com">GitHub Desktop</a></li>
-<li><a href="https://c9.io">Cloud 9</a></li>
-</ul>
+  <h1 id="tutorial-nodejs-express-atom-git-github-desktop-cloud9-y-pandoc-en-mac-os">Tutorial NodeJS, Express, Atom, Git, GitHub Desktop, Cloud9 y Pandoc en Mac OS</h1>
+  <h2 id="tutorial-de-instalación-de-node.js-con-homebrew">Tutorial de instalación de Node.js (con Homebrew)</h2>
+  <h3 id="descarga-e-instalación">1. Descarga e instalación</h3>
+  <p>Dando por hecho que se tiene instalado el gestor de paquetes Homebrew, instalaremos Node.js con el siguiente comando:</p>
+  <pre><code>brew install node</code></pre>
+  <h3 id="uso-de-node.js">2. Uso de Node.js</h3>
+  <p>Podemos lanzar una sesión de Javascript con el comando <em>node</em> en la consola:</p>
+  <pre><code>node</code></pre>
+  <br>
+  <div class="figure">
+    <img src="./img/nodec.png" alt="Node.js" />
+    <p class="caption">Node.js</p>
+  </div>
+  <h2 id="instalación-de-express">Instalación de Express</h2>
+  <p>Para instalar express, utilizamos el comando <code>npm</code>, que tenemos disponible tras la instalación de <strong>Node.js</strong>:</p>
+  <pre><code>npm install express --save</code></pre>
+  <h2 id="instalación-del-editor-de-texto-atom">Instalación del editor de texto Atom</h2>
+  <p>Instalar Atom en Mac OS es tan sencillo como descargar un archivo comprimido con el programa desde la página web oficial de Atom (https://atom.io) y copiar la aplicación contenida en el archivo comprimido a la carpeta Aplicaciones del sistema.</p>
+  <div class="figure">
+    <img src="./img/atom-download.png" alt="Atom" />
+    <p class="caption">Atom</p>
+  </div>
+  <h2 id="instalación-de-git-con-homebrew">Instalación de Git (con Homebrew)</h2>
+  <p>Para instalar git y utilizarlo desde la línea de comandos, utilizamos el siguiente comando:</p>
+  <pre><code>brew install git</code></pre>
+  <h2 id="instalación-de-github-desktop">Instalación de GitHub Desktop</h2>
+  <p>La aplicación de escritorio de GitHub nos permite gestionar nuestros repositorios git desde una interfaz amigable y aporta sincronización con nuestra cuenta de GitHub.</p>
+  <div class="figure">
+    <img src="./img/gd.png" alt="Github Desktop" />
+    <p class="caption">Github Desktop</p>
+  </div>
+  <p>Podemos descargarlo desde la web de Github Desktop (https://desktop.github.com). Una vez descargado y descomprimido, podemos moverlo a la carpeta de Aplicaciones del sistema.</p>
+  <div class="figure">
+    <img src="./img/gd-download.png" alt="Github Desktop download" />
+    <p class="caption">Github Desktop download</p>
+  </div>
+  <h2 id="cloud-9">Cloud 9</h2>
+  <p>Cloud9 nos permite el desarrollo online, pudiendo vincular nuestros repositorios de Github para trabajar con ellos en un IDE en la &quot;nube&quot;.</p>
+  <div class="figure">
+    <img src="./img/c9.png" alt="Cloud 9" />
+    <p class="caption">Cloud 9</p>
+  </div>
+  <p>Como ya se dispone de cuenta de Cloud9, se omite el paso del tutorial.</p>
+  <h2 id="pandoc">Pandoc</h2>
+  <p>Para instalar Pandoc con Homebrew, utlizamos el siguiente comando:</p>
+  <pre><code>brew install Pandoc</code></pre>
+  <p>Una vez instalado, podemos generar un fichero <strong><em>index.html</em></strong> a partir de nuestro tutorial en Markdown con el comando:</p>
+  <pre><code>pandoc index.md -f markdown -t html -s -o index.html</code></pre>
+  <div class="figure">
+    <img src="./img/pandoc.png" alt="Pandoc" />
+    <p class="caption">Pandoc</p>
+  </div>
+  <p>Esto genera un <em>html</em> simple y sin estilo:</p>
+  <div class="figure">
+    <img src="./img/pandoc-html.png" alt="Pandoc HTML" />
+    <p class="caption">Pandoc HTML</p>
+  </div>
+  <p><strong>Recursos:</strong></p>
+  <ul>
+    <li><a href="http://brew.sh">Homebrew</a></li>
+    <li><a href="https://nodejs.org">NodeJS</a></li>
+    <li><a href="http://expressjs.com">Express</a></li>
+    <li><a href="https://atom.io">Atom</a></li>
+    <li><a href="https://desktop.github.com">GitHub Desktop</a></li>
+    <li><a href="https://c9.io">Cloud 9</a></li>
+  </ul>
 </body>
+
 </html>

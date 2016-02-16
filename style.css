@@ -1,0 +1,48 @@
+code {
+  white-space: pre;
+}
+body {
+  background: #348F50;
+  background: -webkit-linear-gradient(to left, #348F50, #56B4D3);
+  background: linear-gradient(to left, #348F50, #56B4D3);
+  font-family: sans-serif;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+h1 {
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  color: white;
+}
+h2,h3 {
+  width: 100%;
+  color: white;
+}
+
+p {
+  text-align: justify;
+  color: white;
+}
+
+.figure {
+  width: 100%;
+  text-align: center;
+}
+
+.figure > p {
+  text-align: center;
+}
+
+.figure > img {
+  /*display:inline-block;
+  vertical-align: middle;*/
+}
+
+pre {
+  width:80%;
+  margin:auto;
+  text-align: center;
+  color:white;
+}
