@@ -1,101 +1,100 @@
-Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
-======================================================
+Tutorial NodeJS, Express, Atom, Git, GitHub Desktop, Cloud9 y Pandoc en Mac OS
+===================
 
-## Instalación de NodeJS en Windows
+## Tutorial de instalación de Node.js (con Homebrew)
 
-Es un intérprete **Javascript** del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
 
-Para empezar a utilizarlo descargar el paquete de instalación para la plataforma windows y seguir los pasos del asistente de instalación de **NodeJS**.
+### 1. Descarga e instalación
 
-![](images/node.png)
+Dando por hecho que se tiene instalado el gestor de paquetes Homebrew, instalaremos Node.js con el siguiente comando:
 
-Abrimos la consola de **NodeJS** y comprobamos que se ha instalado correctamente, aparecerá el siguiente mensaje que indica que se ha instalado.
+```
+brew install node
+```
 
-Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente comando:
+### 2. Uso de Node.js
 
-**Comando**
+Podemos lanzar una sesión de Javascript con el comando *node* en la consola:
 
-> `npm install express --save`
+```
+node
+```
 
-![](images/node2.png)
+![Node.js](./img/nodec.png)
+
+## Instalación de Express
+
+Para instalar express, utilizamos el comando `npm`, que tenemos disponible tras la instalación de **Node.js**:
+
+```
+npm install express --save
+```
 
 ## Instalación del editor de texto Atom
 
-Usaremos **Atom** como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.
+Instalar Atom en Mac OS es tan sencillo como descargar un archivo comprimido con el programa desde
+la página web oficial de Atom (https://atom.io) y copiar la aplicación contenida en el archivo comprimido
+a la carpeta Aplicaciones del sistema.
 
-![](images/atom1.png)
-
-Dado que vamos a utilizar el formato **Markdown** es bueno saber que en **Atom** podremos obtener una preview del contenido de nuestro fichero Markdown ya que incorpora el formato **GitHub Markdown** con el comando:
-
-**Comando**
-
-> * Markdown preview `ctrl+shift+m`
-> * Markdown export to HTML `Save As HTML`
+![Atom](./img/atom-download.png)
 
 
+## Instalación de Git (con Homebrew)
+
+Para instalar git y utilizarlo desde la línea de comandos, utilizamos el siguiente comando:
+
+```
+brew install git
+```
 
 ## Instalación de GitHub Desktop
 
-GitHub es una plataforma para alojar proyectos utilizando el sistema de control de versiones **Git**. Para instalarlo accedemos a la página oficial de **GitHub** y descargamos el instalador que ejecutaremos posteriormente para iniciar el asistente de instalación.
+La aplicación de escritorio de GitHub nos permite gestionar nuestros repositorios git desde una interfaz
+amigable y aporta sincronización con nuestra cuenta de GitHub.
 
-![](images/git.png)
+![Github Desktop](./img/gd.png)
 
-Una vez instalado configuramos nuestra cuenta de **GitHub** en la aplicación para poder sincronizar nuestro repositorio tanto local como remoto, en caso de no tener cuenta crearemos una en la página de **GitHub**.
+Podemos descargarlo desde la web de Github Desktop (https://desktop.github.com). Una vez descargado y descomprimido,
+podemos moverlo a la carpeta de Aplicaciones del sistema.
+
+![Github Desktop download](./img/gd-download.png)
 
 ## Cloud 9
 
-Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la página oficial o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.
+Cloud9 nos permite el desarrollo online, pudiendo vincular nuestros repositorios de Github para trabajar con ellos
+en un IDE en la "nube".
 
-![](images/cloud.png)
+![Cloud 9](./img/c9.png)
 
-Si disponemos de algún proyecto en un repositorio de GitHub podremos asociarlo a **Cloud9** para trabajar en él tan solo creando un “`nuevo workspace`” y añadiendo la url *git* del correspondiente repositorio.
+Como ya se dispone de cuenta de Cloud9, se omite el paso del tutorial.
 
-![](images/cloud2.png)
+## Pandoc
 
-Además **Cloud9** permite el trabajo en equipo en el IDE añadiendo miembros a tu workspace.
+Para instalar Pandoc con Homebrew, utlizamos el siguiente comando:
 
-## Markdown
-
-Markdown es un lenguaje de marcado ligero, lo vamos a utilizar en el editor de texto Atom ya que incorpora por defecto este formato y podremos obtener un live preview mientras vamos desarrollando además de poder exportarlo a HTML sin la necesidad de usar un conversor adicional.
-
-Sintaxis:
-
-
-Encabezados
 ```
-# Encabezado H1
-## Encabezado H2
-### Encabezado H3
+brew install Pandoc
 ```
-Tipografía
-```
-**Negrita**
-*Cursiva*
-> Citas
-Parrafo separar por lineas en blanco
-`Codigo`
-```
-Recursos
-```
-![Texto imagen](url-imagen)
-* [Links](https://example.com)
-```
-Listas
-```
-1. Lista 1
-2. Lista 2
 
-* Lista 1
-* Lista 2
+Una vez instalado, podemos generar un fichero ***index.html*** a partir de nuestro tutorial en Markdown con el comando:
+
 ```
+pandoc index.md -f markdown -t html -s -o index.html
+```
+
+![Pandoc](./img/pandoc.png)
+
+Esto genera un *html* simple y sin estilo:
+
+![Pandoc HTML](./img/pandoc-html.png)
+
+
 
 **Recursos:**
 
+* [Homebrew](http://brew.sh)
 * [NodeJS](https://nodejs.org)
 * [Express](http://expressjs.com)
-* [Atom IDE](https://atom.io)
+* [Atom](https://atom.io)
 * [GitHub Desktop](https://desktop.github.com)
-* [GitHub Pages](https://pages.github.com/)
-* [Cloud 9 IDE](https://c9.io)
-* [Markdown](http://daringfireball.net/projects/markdown/)
-* [Resultado del Markdown HTML](http://alu0100536652.github.io/Tutorial-STW/)
+* [Cloud 9](https://c9.io)
